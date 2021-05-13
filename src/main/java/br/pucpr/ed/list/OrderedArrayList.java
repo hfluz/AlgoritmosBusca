@@ -60,7 +60,40 @@ public class OrderedArrayList<T extends Comparable> implements List<T> {
 
     @Override
     public boolean exists(T key) {
+//        return binaryExists(key); sem recursão
+        return recursiveBinaryExists(key, 0, size - 1); // com recursão
+    }
+
+    private boolean binaryExists(T key){
+        int baixo = 0;
+        int cima = size - 1;
+        while (baixo <= cima){
+            int meio = (cima + baixo) / 2;
+            int resultado = key.compareTo(array[meio]);
+            if(resultado == 0){
+                return true;
+            } else if(resultado < 0){
+                cima = meio - 1;
+            } else {
+                baixo = meio + 1;
+            }
+        }
         return false;
+    }
+
+    private boolean recursiveBinaryExists(T key, int baixo, int cima){
+        if(baixo > cima){
+            return false;
+        }
+        int meio = (cima + baixo)/2;
+        int resultado = key.compareTo(array[meio]);
+        if(resultado == 0){
+            return true;
+        } else if(resultado < 0){
+            return recursiveBinaryExists(key, baixo, meio - 1);
+        } else{
+            return recursiveBinaryExists(key, meio + 1, cima);
+        }
     }
 
     @Override

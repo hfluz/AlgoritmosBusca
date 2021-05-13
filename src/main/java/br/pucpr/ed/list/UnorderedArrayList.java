@@ -52,6 +52,11 @@ public class UnorderedArrayList<T> implements List<T> {
 
     @Override
     public boolean exists(T key) {
+        for(int i = 0; i < size; i++){
+            if(array[i].equals(key)){
+                return true;
+            }
+        }
         return false;
     }
 
