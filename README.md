@@ -1,6 +1,7 @@
 # Algoritmos de Busca, Maps e Hash Tables
 
-Projeto apresentado no dia 13 de maio de 2021 para os estudantes da disciplina de Resolução de Problemas Estruturados em Computação do curso de Engenharia de Software da PUCPR, campus Londrina.
+Projeto apresentado no dia 13 de maio de 2021 para os estudantes da disciplina de Resolução de
+Problemas Estruturados em Computação do curso de Engenharia de Software da PUCPR, campus Londrina.
 
 **Organização do projeto:**
 
@@ -8,9 +9,12 @@ Projeto apresentado no dia 13 de maio de 2021 para os estudantes da disciplina d
 
 **Exercícios:**
 
-**1)** Implementar o método exists na classe UnorderedArrayList usando busca sequencial.
-**2)** Implementar o método exists na classe OrderedArrayList usando busca binária.
+**1)** Implementar o método exists na classe UnorderedArrayList usando busca sequencial.  
+**2)** Implementar o método exists na classe OrderedArrayList usando busca binária.  
+**3)** Experimente alterar os valores de SearchApp.QUANTIDADE_NUMEROS e SearchApp.QUANTIDADE_BUSCAS
+para comparar o desempenho dos 2 arrays tanto na alocação do array quanto na busca.
 
 **Referência:**
 
-GOODRICH, Michael T. Estruturas de dados & algoritmos em Java. 5. Porto Alegre Bookman 2013 1 recurso online ISBN 9788582600191.
+GOODRICH, Michael T. Estruturas de dados & algoritmos em Java. 5. Porto Alegre Bookman 2013 1
+recurso online ISBN 9788582600191.
