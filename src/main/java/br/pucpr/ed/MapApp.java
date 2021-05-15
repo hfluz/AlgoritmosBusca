@@ -6,7 +6,7 @@ import br.pucpr.ed.map.OrderedMap;
 public class MapApp {
 
     public static void main(String[] args) {
-        Map<String, Integer> myMap = new OrderedMap<>();
+        Map<String, Integer> myMap = new OrderedMap<>(50);
         myMap.put("map", 1);
         myMap.put("test", 4);
         myMap.put("pom.xml", 2);

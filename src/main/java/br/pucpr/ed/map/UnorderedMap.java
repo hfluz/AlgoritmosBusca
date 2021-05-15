@@ -7,8 +7,8 @@ public class UnorderedMap<K extends Comparable, V> implements Map<K, V> {
 
     private UnorderedArrayList<Entry<K, V>> entries;
 
-    public UnorderedMap() {
-        entries = new UnorderedArrayList<>(50);
+    public UnorderedMap(int capacity) {
+        entries = new UnorderedArrayList<>(capacity);
     }
 
     @Override

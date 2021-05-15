@@ -8,8 +8,8 @@ public class OrderedMap<K extends Comparable, V> implements Map<K, V> {
 
     private OrderedArrayList<Entry<K, V>> entries;
 
-    public OrderedMap() {
-        entries = new OrderedArrayList<>(50);
+    public OrderedMap(int capacity) {
+        entries = new OrderedArrayList<>(capacity);
     }
 
     @Override
