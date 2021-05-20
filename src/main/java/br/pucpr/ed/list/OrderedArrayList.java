@@ -98,7 +98,7 @@ public class OrderedArrayList<T extends Comparable> implements List<T> {
 
     @Override
     public T get(int index) {
-        if(index >= size){
+        if(index >= array.length){
             throw new IndexOutOfBoundsException();
         }
         return array[index];
