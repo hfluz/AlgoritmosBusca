@@ -18,6 +18,8 @@ para comparar o desempenho dos 2 arrays tanto na alocação do array quanto na b
 **6)** AFI7: Implementar o método put nas classes UnorderedMap e OrderedMap.  
 **7)** AFI7: Implementar o método remove nas classes UnorderedMap e OrderedMap, lembrando que no método é necessário.  
 **8)** Extra: Crie a classe abstrata AbstractMap e utilize herança para reduzir a duplicação de código entre UnorderedMap e OrderedMap.  
+**9)** Extra: Implemente o método resize na classe HashMap, que aumenta o tamanho do array do hash map na inclusão se o 
+fator de carga for maior que 1.
 
 
 **Referência:**
